@@ -962,7 +962,17 @@ $( "#go" ).click(function() {
   }, 800 );
 });
 
+function hideAll(){
+ $("#rainy2").hide();
+$("#pomodoro2").hide();
+$("#chill2").hide();
+$("cafe2").hide();
+$("acoustic2").hide();
+$("credits2").hide()
+}
+
 $( "#rainy" ).click(function() {
+hideAll();
   $( "#rainy2" ).fadeToggle( "slow", function() {
     // Animation complete.
   });
