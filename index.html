@@ -962,50 +962,90 @@ $( "#go" ).click(function() {
   }, 800 );
 });
 
-function hideAll(){
- $("#rainy2").hide();
+function hideAll1(){
 $("#pomodoro2").hide();
 $("#chill2").hide();
 $("#cafe2").hide();
 $("#acoustic2").hide();
-$("#credits2").hide()
+$("#credits2").hide();
 }
 
+function hideAll2(){
+$("#rainy2").hide();
+$("#chill2").hide();
+$("#cafe2").hide();
+$("#acoustic2").hide();
+$("#credits2").hide();
+}
+
+function hideAll3(){
+$("#rainy2").hide();
+$("#pomodoro2").hide();
+$("#cafe2").hide();
+$("#acoustic2").hide();
+$("#credits2").hide();
+}
+
+function hideAll4(){
+$("#rainy2").hide();
+$("#pomodoro2").hide();
+$("#chill2").hide();
+$("#acoustic2").hide();
+$("#credits2").hide();
+}
+
+function hideAll5(){
+$("#rainy2").hide();
+$("#pomodoro2").hide();
+$("#chill2").hide();
+$("#cafe2").hide();
+$("#credits2").hide();
+}
+
+function hideAll6(){
+$("#rainy2").hide();
+$("#pomodoro2").hide();
+$("#chill2").hide();
+$("#cafe2").hide();
+$("#acoustic2").hide();
+}
+
+	
 $( "#rainy" ).click(function() {
-hideAll();
+hideAll11();
   $( "#rainy2" ).fadeToggle( "slow", function() {
     // Animation complete.
   });
 });
 
 $( "#pomodoro" ).click(function() {
-hideAll();
+hideAll2();
   $( "#pomodoro2" ).fadeToggle( "slow", function() {
     // Animation complete.
   });
 });
 
 $( "#chill" ).click(function() {
-hideAll();
+hideAll3();
   $( "#chill2" ).fadeToggle( "slow", function() {
     // Animation complete.
   });
 });
 
 $( "#cafe").click(function() {
-hideAll();
+hideAll4();
 	$( "#cafe2").fadeToggle( "slow", function() {
 });
 });
 
 $( "#acoustic").click(function() {
-hideAll();
+hideAll5();
 	$( "#acoustic2").fadeToggle( "slow", function() {
 });
 });
 					  
 $( "#credits").click(function() {
-hideAll();
+hideAll6();
 	$( "#credits2").fadeToggle( "slow", function() {
 });
 });
