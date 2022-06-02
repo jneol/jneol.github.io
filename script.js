@@ -14,6 +14,8 @@ window.addEventListener('load', () => {
     document.getElementById("nav-completed").addEventListener("click", function () {
         containerPending.classList.add("hidden");
         containerCompleted.classList.remove("hidden");
+        document.getElementById("nav-completed").classList.add("selected");
+        document.getElementById("nav-pending").classList.remove("selected");
 
     })
 
@@ -21,6 +23,9 @@ window.addEventListener('load', () => {
     document.getElementById("nav-pending").addEventListener("click", function () {
         containerPending.classList.remove("hidden");
         containerCompleted.classList.add("hidden");
+        document.getElementById("nav-completed").classList.remove("selected");
+        document.getElementById("nav-pending").classList.add("selected");
+
     })
 
     // for (let i = 0; i < localStorage.length; i++) {
@@ -302,15 +307,19 @@ function DisplayTodos() {
 // Clear All button
 document.getElementById("delete-all").addEventListener('click', (e) => {
     e.preventDefault();
-    // getElementsByClassName returns an array of ALL instances of elements with that ClassName, even if there's only one element with that ClassName.
-    // var items = document.getElementsByClassName("item");
-    // // Using a for loop, we can loop through each and every instance of the elements with that ClassName.
-    // // for (let i = 0; i < items.length; i++) {
-    // while (items.length > 0) {
-    //     // items[i].remove();
-    //     containerPending.removeChild(items[0]);
-    // }
-    localStorage.clear();
+    confirmation = prompt("Are you sure you want to clear all existing records? Type 'yes' to confirm.")
+    if (confirmation == "yes") {
+        // getElementsByClassName returns an array of ALL instances of elements with that ClassName, even if there's only one element with that ClassName.
+        // var items = document.getElementsByClassName("item");
+        // // Using a for loop, we can loop through each and every instance of the elements with that ClassName.
+        // // for (let i = 0; i < items.length; i++) {
+        // while (items.length > 0) {
+        //     // items[i].remove();
+        //     containerPending.removeChild(items[0]);
+        // }
+        localStorage.clear();
+        alert("Records cleared!");
+    }
     location.reload();
 });
 
