@@ -7,8 +7,12 @@
     <title>To-Do List</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
   </head>
   <body>
+    <div class="sidebar">
+    <button id="gradienttitle">🌈</button>
+  </div>
     <header>
       <br>
       <h1>To-Do List</h1>
@@ -59,11 +63,20 @@ function ShowQuote()
   }
   
   document.addEventListener("load", ShowQuote());
+</script>
+<script>
+  $("#gradienttitle").click(function(){
+    $("#gradienttitle").css("border", "none");
+        $("body").each(function(){
+    		var classes = ['gra5', 'gra1', 'gra2', 'gra3', 'gra4', 'body'];
+    		this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
+  		});
+	});
  </script>
     </div>
     <h2>Tasks</h2>
     <div id="todo-nav">
-    <button id="nav-pending">Pending</button>
+    <button id="nav-pending" class="selected">Pending</button>
     <button id="nav-completed">Completed</button>
     </div>
     <section id="tasks">
@@ -86,7 +99,7 @@ function ShowQuote()
   <div class="container hidden" id="container-completed">
   </div>
 </section>
-    <script src="script.js"></script>
 
+    <script src="script.js"></script>
   </body>
 </html>
