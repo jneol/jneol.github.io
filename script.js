@@ -314,3 +314,7 @@ document.getElementById("delete-all").addEventListener('click', (e) => {
     location.reload();
 });
 
+// Refresh
+document.getElementById('refresh').addEventListener('click', function () {
+    location.reload();
+})
