@@ -13,6 +13,21 @@
     <div class="sidebar">
     <button id="gradienttitle">🌈</button>
   </div>
+  <!-- Nanobar loading bar -->
+  <script src="/nanobar.min.js"></script>
+  <div class="nanobar nano-class" id="nano-id" style="position: fixed;">
+      <div class="bar"></div>
+  </div>
+  <script>
+      var options = {
+          classname: 'nano-class',
+          id: 'nano-id'
+      };
+      var nanobar = new Nanobar(options);
+      nanobar.go(30);
+      nanobar.go(76);
+      nanobar.go(100);
+  </script>
     <header>
       <br>
       <h1>To-Do List</h1>
