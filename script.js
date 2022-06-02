@@ -128,6 +128,11 @@ window.addEventListener('load', () => {
             // Navigate to Pending
             containerPending.classList.remove("hidden");
             containerCompleted.classList.add("hidden");
+            const navComplete = document.querySelector("#nav-completed");
+            const navPending = document.querySelector("#nav-pending");
+            navComplete.classList.remove("selected");
+            console.log(navComplete);
+            navPending.classList.add("selected");
 
             const storedItem = {
                 itemName: newItemName.innerText,
