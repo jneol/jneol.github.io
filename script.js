@@ -85,10 +85,8 @@ window.addEventListener('load', () => {
         const newItemName = document.createElement("div");
         const newItemDate = document.createElement("div");
         const newItemTools = document.createElement("div");
-        const newItemEdit = document.createElement("button");
         const newItemDelete = document.createElement("button");
         const newItemDone = document.createElement("button");
-        const completedItemDelete = document.createElement("button");
 
         if (newTaskInput.value != "") {
 
@@ -105,13 +103,10 @@ window.addEventListener('load', () => {
             newItemDesc.appendChild(newItemDate);
             // 
             newItemTools.classList.add("tools");
-            newItemEdit.classList.add("edit");
-            newItemEdit.innerText = "Edit";
             newItemDelete.classList.add("delete");
             newItemDelete.innerText = "Delete";
             newItemDone.classList.add("done");
             newItemDone.innerText = "Done";
-            newItemTools.appendChild(newItemEdit);
             newItemTools.appendChild(document.createTextNode(" "));
             newItemTools.appendChild(newItemDelete);
             newItemTools.appendChild(document.createTextNode(" "));
@@ -200,7 +195,6 @@ function DisplayTodos() {
         const newItemName = document.createElement("div");
         const newItemDate = document.createElement("div");
         const newItemTools = document.createElement("div");
-        const newItemEdit = document.createElement("button");
         const newItemDelete = document.createElement("button");
         const newItemDone = document.createElement("button");
         const completedItemDelete = document.createElement("button");
@@ -225,17 +219,13 @@ function DisplayTodos() {
         newItemDesc.appendChild(newItemDate);
         // 
         newItemTools.classList.add("tools");
-        newItemEdit.classList.add("edit");
-        newItemEdit.innerText = "Edit";
         newItemDelete.classList.add("delete");
         newItemDelete.innerText = "Delete";
-        newItemDone.classList.add("done");
-        newItemDone.innerText = "Done";
-        newItemTools.appendChild(newItemEdit);
+
         newItemTools.appendChild(document.createTextNode(" "));
         newItemTools.appendChild(newItemDelete);
         newItemTools.appendChild(document.createTextNode(" "));
-        newItemTools.appendChild(newItemDone);
+
         // 
         newItemBox.appendChild(newItemDesc);
         newItemBox.appendChild(newItemTools);
@@ -244,6 +234,9 @@ function DisplayTodos() {
             // display pending items stored in localStorage
             // const todoItem = document.createElement('div');
             // todoItem.classList.add('todo-item');
+            newItemDone.classList.add("done");
+            newItemDone.innerText = "Done";
+            newItemTools.appendChild(newItemDone);
             containerPending.appendChild(newItemBox);
         } else {
             newItemBox.classList.toggle("item-done");
@@ -274,13 +267,10 @@ function DisplayTodos() {
             newItemDesc.appendChild(newItemDate);
             // 
             newItemTools.classList.add("tools");
-            newItemEdit.classList.add("edit");
-            newItemEdit.innerText = "Edit";
             newItemDelete.classList.add("delete");
             newItemDelete.innerText = "Delete";
             newItemDone.classList.add("done");
             newItemDone.innerText = "Done";
-            newItemTools.appendChild(newItemEdit);
             newItemTools.appendChild(document.createTextNode(" "));
             newItemTools.appendChild(newItemDelete);
             newItemTools.appendChild(document.createTextNode(" "));
