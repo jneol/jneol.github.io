@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
         body.classList.add(colours[colourCount]);
         body.classList.remove(colours[colourCount - 1]);
         colourCount++
-        if (colourCount == 6) {
+        if (colourCount == 24) {
             colourCount = 0;
         };
 
