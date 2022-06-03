@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     // Retrieve user's settings for the theme of the webpage!!
     var colourCount = localStorage.getItem('colourCount');
-    colours = ["gra1", "gra2", "gra3", "gra4", "gra5", "body"];
+    colours = ["gra1", "gra2", "gra3", "gra4", "gra5", "gra6", "gra7", "gra8", "gra9", "gra10", "gra11", "gra12", "gra13", "gra14", "gra15", "gra16", "gra17", "gra18", "gra19", "gra20", "gra21", "gra22", "gra23", "body"];
     // console.log(colours[colourCount - 1]);
     const body = document.querySelector("body");
     body.classList.add(colours[colourCount - 1]);
