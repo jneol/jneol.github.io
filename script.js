@@ -1,4 +1,26 @@
 window.addEventListener('load', () => {
+    // Retrieve user's settings for the theme of the webpage!!
+    var colourCount = localStorage.getItem('colourCount');
+    colours = ["gra1", "gra2", "gra3", "gra4", "gra5", "body"];
+    // console.log(colours[colourCount - 1]);
+    const body = document.querySelector("body");
+    body.classList.add(colours[colourCount - 1]);
+
+    document.getElementById("gradient-toggler").addEventListener('click', function () {
+        colours = ["gra1", "gra2", "gra3", "gra4", "gra5", "body"];
+
+        const body = document.querySelector("body");
+        // console.log(colours[colourCount]);
+        body.classList.add(colours[colourCount]);
+        body.classList.remove(colours[colourCount - 1]);
+        colourCount++
+        if (colourCount == 6) {
+            colourCount = 0;
+        };
+
+        localStorage.setItem('colourCount', colourCount);
+    })
+
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     DisplayTodos()
 
@@ -131,7 +153,7 @@ window.addEventListener('load', () => {
             const navComplete = document.querySelector("#nav-completed");
             const navPending = document.querySelector("#nav-pending");
             navComplete.classList.remove("selected");
-            console.log(navComplete);
+            // console.log(navComplete);
             navPending.classList.add("selected");
 
             const storedItem = {
@@ -332,3 +354,5 @@ document.getElementById("delete-all").addEventListener('click', (e) => {
 document.getElementById('refresh').addEventListener('click', function () {
     location.reload();
 })
+
+
