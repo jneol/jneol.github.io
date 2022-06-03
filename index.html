@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="sidebar">
-    <button id="gradienttitle">🌈</button>
+    <button id="gradient-toggler">🌈</button>
   </div>
   <!-- Nanobar loading bar -->
   <script src="/nanobar.min.js"></script>
@@ -79,15 +79,6 @@ function ShowQuote()
   
   document.addEventListener("load", ShowQuote());
 </script>
-<script>
-  $("#gradienttitle").click(function(){
-    $("#gradienttitle").css("border", "none");
-        $("body").each(function(){
-    		var classes = ['gra5', 'gra1', 'gra2', 'gra3', 'gra4', 'body'];
-    		this.className = classes[($.inArray(this.className, classes)+1)%classes.length];
-  		});
-	});
- </script>
     </div>
     <h2>Tasks</h2>
     <div id="todo-nav">
