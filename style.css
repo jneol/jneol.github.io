@@ -40,6 +40,78 @@ body {
   background: linear-gradient(to right, #bb377d, #fbd3e9);
 }
 
+.gra6 {
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+}
+
+.gra7 {
+  background: linear-gradient(to right, #fc5c7d, #6a82fb);
+}
+
+.gra8 {
+  background: linear-gradient(to right, #00f260, #0575e6);
+}
+
+.gra9 {
+  background: linear-gradient(to right, #cac531, #f3f9a7);
+}
+
+.gra10 {
+  background: linear-gradient(to right, #fc4a1a, #f7b733);
+}
+
+.gra11 {
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+}
+
+.gra12 {
+  background: linear-gradient(to right, #00c3ff, #ffff1c);
+}
+
+.gra13 {
+  background: linear-gradient(to right, #ff4b1f, #1fddff);
+}
+
+.gra14 {
+  background: linear-gradient(to right, #4ca1af, #c4e0e5);
+}
+
+.gra15 {
+  background: linear-gradient(to right, #114357, #f29492);
+}
+
+.gra16 {
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+
+.gra17 {
+  background: linear-gradient(to right, #ffa17f, #00223e);
+}
+
+.gra18 {
+  background: linear-gradient(to right, #b3ffab, #12fff7);
+}
+
+.gra19 {
+  background: linear-gradient(to right, #fc354c, #0abfbc);
+}
+
+.gra20 {
+  background: linear-gradient(to right, #f09819, #edde5d);
+}
+
+.gra21 {
+  background: linear-gradient(to right, #02aab0, #00cdac);
+}
+
+.gra22 {
+  background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);
+}
+
+.gra23 {
+  background: linear-gradient(to right, #9796f0, #fbc7d4);
+}
+
 .nano-class .bar {
   background: rgb(243, 34, 139);
 }
