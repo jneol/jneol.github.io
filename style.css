@@ -12,30 +12,31 @@ body {
 }
 
 .gra1 {
-  background-image: linear-gradient(85deg, #fba8a4 0%, #dad2f3 74%);
+  /* background: -webkit-linear-gradient(to right, #fba8a4, #dad2f3); */
+  background: linear-gradient(to right, #fba8a4, #dad2f3);
 }
 
 .gra2 {
-  background: #feac5e;
-  background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
+  /* background: #feac5e; */
+  /* background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e); */
   background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
 }
 
 .gra3 {
-  background: #83a4d4;
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  /* background: #83a4d4; */
+  /* background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4); */
   background: linear-gradient(to right, #b6fbff, #83a4d4);
 }
 
 .gra4 {
-  background: #c9ffbf;
-  background: -webkit-linear-gradient(to right, #ffafbd, #c9ffbf);
+  /* background: #c9ffbf; */
+  /* background: -webkit-linear-gradient(to right, #ffafbd, #c9ffbf); */
   background: linear-gradient(to right, #ffafbd, #c9ffbf);
 }
 
 .gra5 {
-  background: #fbd3e9;
-  background: -webkit-linear-gradient(to right, #bb377d, #fbd3e9);
+  /* background: #fbd3e9; */
+  /* background: -webkit-linear-gradient(to right, #bb377d, #fbd3e9); */
   background: linear-gradient(to right, #bb377d, #fbd3e9);
 }
 
@@ -98,7 +99,7 @@ button {
   border: 1px solid black;
   background-color: white;
   font-size: 1.25rem;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(216, 216, 216);
   padding: 5px;
   transition: 0.15s;
 }
