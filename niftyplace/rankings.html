@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiftyPlace | NFT Marketplace for All</title>
+
+</head>
+<div class="flex-wrapper">
+
+    <!-- Nanobar loading bar -->
+    <script src="nanobar.min.js"></script>
+    <div class="nanobar nano-class" id="nano-id" style="position: fixed;">
+        <div class="bar"></div>
+    </div>
+    <script>
+        var options = {
+            classname: 'nano-class',
+            id: 'nano-id'
+        };
+        var nanobar = new Nanobar(options);
+        nanobar.go(30);
+        nanobar.go(76);
+        nanobar.go(100);
+    </script>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="container-nav container-nav-1">
+            <div class="logo">
+                <h1><a href="/index.html">NiftyPlace</a></h1>
+                <!-- <h1><a href=" /index.html">NiftyPlace</a><img src="/favicon-32x32.png"></h1> -->
+                <p class="slogan">Your one-stop NFT marketplace</p>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/list.html">List an NFT</a></li>
+                <li><a href="/mint.html">Mint an NFT</a></li>
+                <li class="active-tab"><a href="/rankings.html">Rankings</a></li>
+                <li><a href="/contactus.html">Contact Us</a></li>
+                <li><a href="/login.html">Log In/Register</a></li>
+            </ul>
+        </div>
+
+        <!-- Showcase -->
+        <section class="showcase ranking">
+            <div class="ranking-head">
+                <div class="container grid">NFT Rankings</div><br>
+            </div>
+            <!-- <div class="container grid ranking grid-8"> -->
+            <div class="container ranking">
+
+                <div class="grid grid-7">
+                    <div>Collection</div>
+                    <div>Volume</div>
+                    <div>24h %</div>
+                    <div>7d %</div>
+                    <div>Floor Price</div>
+                    <div>Owners</div>
+                    <div>Supply</div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB=s100">Bored
+                        Ape Yacht Club
+                    </div>
+                    <div>11,859.79 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+14.76%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-68.32%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>102.69 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>6.4K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE=s100">CryptoPunks
+                    </div>
+                    <div>10,348.39 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+1.26%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-0.33%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>140.23 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>3.4K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/gjOExI2qNNJuv6fo4hmHamRzDMRLkYPFQtK4d67GE3bgdVJCyZngUwY_h6qp9244pp7l_pF2JBHtOJ8cLgzFbulxMK-KqlZnu9E1sg=s100">Gutter
+                        Cat Gang
+                    </div>
+                    <div>10,302.92 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+200.99%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-8.54%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>20.69 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>6.0K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/7B0qai02OdHA8P_EOVK672qUliyjQdQDGNrACxs7WnTgZAkJa_wWURnIFKeOh5VTf8cfTqW3wQpozGedaC9mteKphEOtztls02RlWQ=s100">Doodles
+                    </div>
+                    <div>10,234.59 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+4.76%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-8.32%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>14.23 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>7.3K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/H8jOCJuQokNqGBpkBN5wk1oZwO7LM8bNnrHCaekV2nKjnCqw6UB5oaH8XyNeBDj6bA_n1mjejzhFQUP3O1NfjFLHr3FOaeHcTOOT=s100">
+                        Azuki
+                    </div>
+                    <div>10,023.93 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+34.25%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-28.27%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>24.69 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>6.4K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/bcCd1TfusKK6wWjmshwmizmY9j7An3pp9kxopMxfIt-_I8WFnSIK-5gevOduoYK4Qpq2e3DyXgROKNfkP396W5ViEYXhxoyAZG3s_vY=s100">Pudgy
+                        Penguins
+                    </div>
+                    <div>8,859.79 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+114.56%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-8.32%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>22.69 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>5.4K</div>
+                    <div>8.9K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/DIafQlRW63pQ8UJqmdQBBOHZcubAE9rAkbovVx_WU_-TmIg3hF7z0y60gUGvah85_uYVgBxmhNfWUXwajaUmYZsrCPp8ZdYE0Z-wrt0=s100">NFT
+                        Worlds
+                    </div>
+                    <div>8,034.97 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+104.76%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-8.32%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>9.69 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>8.4K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/XN0XuD8Uh3jyRWNtPTFeXJg_ht8m5ofDx6aHklOiy4amhFuWUa0JaR6It49AH8tlnYS386Q0TW_-Lmedn0UET_ko1a3CbJGeu5iHMg=s100">CLONE
+                        X
+                    </div>
+                    <div>7,345.23 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+54.34%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-14.35%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>16.39 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>9.2K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/lHexKRMpw-aoSyB1WdFBff5yfANLReFxHzt1DOj_sg7mS14yARpuvYcUtsyyx-Nkpk6WTcUPFoG53VnLJezYi8hAs0OxNZwlw6Y-dmI=s100">Mutated
+                        Ape Yacht Club
+                    </div>
+                    <div>6,819.29 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="negative">-4.76%</div>
+                    </div>
+                    <div>
+                        <div class="positive">+9.32%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>23.23 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>12.4K</div>
+                    <div>18.6K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/gp39NTyxBPazqowYV9XTFxAU4eNk1i7FlmonHW4Zr7eS9UxEvrZ7f04rOLEhDxcuGxsbUx1Rm_N6Ky_Dp4A1ZQYHFAaEWj5YdBF0qg=s100">RTFKT
+                        - MNLTH
+                    </div>
+                    <div>6,712.53 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+54.76%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-2.22%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>6.34 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>2.4K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/lW22aEwUE0IqGaYm5HRiMS8DwkDwsdjPpprEqYnBqo2s7gSR-JqcYOjU9LM6p32ujG_YAEd72aDyox-pdCVK10G-u1qZ3zAsn2r9=s100">Invisible
+                        Friends
+                    </div>
+                    <div>5,234.23 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+4.73%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-3.25%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>5.23 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>3.3K</div>
+                    <div>5.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/LIov33kogXOK4XZd2ESj29sqm_Hww5JSdO7AFn5wjt8xgnJJ0UpNV9yITqxra3s_LMEW1AnnrgOVB_hDpjJRA1uF4skI5Sdi_9rULi8=s100">Cool
+                        Cats NFT
+                    </div>
+                    <div>4,183.46 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="negative">-0.23%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-5.36%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>12.69 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>4.3K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/J2iIgy5_gmA8IS6sXGKGZeFVZwhldQylk7w7fLepTE9S7ICPCn_dlo8kypX8Ju0N6wvLVOKsbP_7bNGd8cpKmWhFQmqMXOC8q2sOdqw=s100">mfers
+                    </div>
+                    <div>4,090.59 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+4.73%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-1.99%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>5.63 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>7.1K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-8">
+                    <div class="flex-2"><img
+                            src="https://lh3.googleusercontent.com/hP4JJhiY5yXu1mCvNycTke2O_xbtgIFfkLTjfT7C9TNKinkGpP2COikt7cwn0xqzoATRNC21wsiwy_Fe-MQ3PPTgRjkbbCfJf__L=s100">World
+                        of Women Galaxy
+                    </div>
+                    <div>3,877.89 <i class=' fab fa-ethereum' style='color:#ec555c'></i></div>
+                    <div>
+                        <div class="positive">+1.76%</div>
+                    </div>
+                    <div>
+                        <div class="negative">-8.2%</div>
+                    </div>
+                    <div>
+                        <div class="mobile-only">Floor: </div>1.29 <i class=' fab fa-ethereum'
+                            style='color:#ec555c'></i>
+                    </div>
+                    <div>9.4K</div>
+                    <div>10.0K</div>
+                    <div>
+                        <div class="btn btn-one">Buy Now</div>
+                    </div>
+                </div>
+
+            </div>
+</div>
+
+
+
+</div>
+</section>
+<a href="#top" class="go-top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+</a>
+<!---JS CDN Link---->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!---Custom CDN Link---->
+<script src="js.js"></script>
+<!--- ionicon link -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<!-- Footer -->
+<div class="footer">
+    <div class="container grid grid-6">
+        <div>
+            <h1 class="md">NiftyPlace</h1>
+            <p>Copyright © 2022<br>
+                All rights reserved.</p>
+        </div>
+
+        <div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-discord fa-2x"></i></a>
+            </div>
+            <a href="#">Privacy Policy</a><br>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </div>
+</div>
+
+</html>

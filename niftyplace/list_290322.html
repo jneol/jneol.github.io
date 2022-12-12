@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NiftyPlace | NFT Marketplace for All</title>
+</head>
+<div class="flex-wrapper">
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <div class="container-nav container-nav-1">
+            <div class="logo">
+                <h1><a href="/index.html">NiftyPlace</a></h1>
+                <p class="slogan">Your one-stop NFT marketplace</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/list.html">List an NFT</a></li>
+                    <li><a href="#rankings">Rankings</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li id="login"><a href="#">Log In/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Login Box -->
+        <div id="loginBox" class="modal">
+            <div id="loginbox" class="loginbox">
+                <div class="form-loginbox sign-up-loginbox">
+                    <form action="#">
+                        <h1>
+                            <div class="md">Create Account</div>
+                        </h1>
+                        <div class="socials" onclick="tbc()">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email</span>
+                        <input type="text" placeholder="Username" />
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <button onclick="tbc()">Sign Up</button>
+                    </form>
+                </div>
+                <div class="form-loginbox sign-in-loginbox">
+                    <form action="#">
+                        <h1>
+                            <div class="md">Sign in</div>
+                        </h1>
+                        <div class="socials" onclick="tbc()">
+                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        <span>or use your email</span>
+                        <input type="email" placeholder="Email" />
+                        <input type="password" placeholder="Password" />
+                        <a href="#">Forgot your password?</a>
+                        <button onclick="tbc()">Sign In</button>
+                        <button onclick="tbc()">Sign In with MetaMask</button>
+                    </form>
+                </div>
+                <div class="overlay-loginbox">
+                    <div class="overlay">
+                        <div class="overlay-panel overlay-left">
+                            <h1>Sign In</h1>
+                            <p>To keep connected with us please login with your personal info</p>
+                            <button class="ghost" id="signIn">Sign In</button>
+                        </div>
+                        <div class="overlay-panel overlay-right">
+                            <h1>Hello!</h1>
+                            <p>Not registered yet? Click to sign up!</p>
+                            <button class="ghost" id="signUp">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Listing -->
+        <section class="listing">
+            <div class="listing-overlay" id="listing-overlay">
+                <div class="overlay-text">
+                    <h1>
+                        <div class="lg">
+                            <font color="#fbd32c"><i class="fas fa-exclamation-triangle"></i></font> Not Logged In
+                        </div>
+                    </h1>
+                    <p>You are not logged in.
+                        Please log in to list an NFT from your wallet.
+                    </p>
+                    <a href="#" class="btn btn-one" onclick="disableOverlay()">
+                        Log In with Guest Account
+                    </a>
+                </div>
+            </div>
+
+            <div class="container listing-1" id="listing-1">
+                hello
+            </div>
+            <!---JS CDN Link---->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!---Custom CDN Link---->
+            <script src="js.js"></script>
+</div>
+</section>
+
+</body>
+<!-- Footer -->
+<div class="footer">
+    Copyright © 2022 eonjae. All rights reserved.
+</div>
+</div>
+
+</html>
