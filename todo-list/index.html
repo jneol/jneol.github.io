@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+  <body>
+    <div class="sidebar">
+    <button id="gradient-toggler">🌈</button>
+  </div>
+  <!-- Nanobar loading bar -->
+  <script src="/nanobar.min.js"></script>
+  <div class="nanobar nano-class" id="nano-id" style="position: fixed;">
+      <div class="bar"></div>
+  </div>
+  <script>
+      var options = {
+          classname: 'nano-class',
+          id: 'nano-id'
+      };
+      var nanobar = new Nanobar(options);
+      nanobar.go(30);
+      nanobar.go(76);
+      nanobar.go(100);
+  </script>
+    <header>
+      <br>
+      <h1>To-Do List</h1>
+      <form id="add-task-form">
+        <h2>What are your plans for today?</h2>
+      <input type="text" id="new-item" name="newitem" placeholder="e.g. read chapter 1" /><br><br>
+      <input type="submit" id="add" value="Add New Item"></input>
+      <input type="button" id="delete-all" value="Clear All"></input>
+      <button id="refresh"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+      
+    </form>
+    </header>
+    <div class="quote">
+      <script>
+function ShowQuote()
+  {
+    var Quote = [
+    	'Push yourself because no one else is going to do it for you.',
+    	'If you never try, then you&#39;ll never know.',
+    	'If you want extraordinary results, then you must put in extraordinary effort.',
+    	'Don&#39;t tell people about your plans, show them your results.',
+    	'There are no secrets to success. It is the result of preparation, hard work, and learning from failure.',
+    	'A little progress each day adds up to big results.',
+    	'Consistent action creates consistent results.',
+    	'Results come over time, not over night.',
+    	'Today&#39;s actions are tomorrow&#39;s results.',
+    	'Pain is temporary, GPA is forever.',
+    	'You need to give it all you&#39;ve got in order to accelerate your results.',
+    	'Persistence guarantees that results are inevitable.',
+    	'The best way to get results is not to have excuses.',
+    	'The results you achieve will be in direct proportion to the effort you apply.',
+    	'Study while others are sleeping and you&#39;ll celebrate while others will regret.',
+    	'Shoot for the moon because even if you miss, you&#39;ll land among the stars.',
+    	'Everything you do now is for your future. Think about that.',
+    	'If you want to be more powerful in life, educate yourself. It&#39;s that simple.',
+    	'You don&#39;t want to look back and know you could&#39;ve done better.',
+    	'The fact that you aren&#39;t where you want to be, should be enough motivation.',
+    	'Focus on studying. I know it&#39;s hard, but believe me, it&#39;s going to be worth it.',
+    	'To be in the top 1%, you have to be willing to do what the other 99% aren&#39;t.',
+    	'The expert in anything was once a beginner.',
+        'The only time to regret the past is tomorrow.',
+	'Willpower is what pushes us when everyone else would have quit.',
+	'Don&#39;t live without dreams, but don&#39;t live within them.',
+	'If you think your dreams are out of reach, get up and go get them.',
+    ];
+    var Pick = Math.floor(Math.random() * (Quote.length));
+    document.write(Quote[Pick]);
+  }
+  
+  document.addEventListener("load", ShowQuote());
+</script>
+    </div>
+    <h2>Tasks</h2>
+    <div id="todo-nav">
+    <button id="nav-pending" class="selected">Pending</button>
+    <button id="nav-completed">Completed</button>
+    </div>
+    <section id="tasks">
+    <div class="container" id="container-pending">
+      <!-- item 1 -->
+      <!-- <div class="item">
+        <div class="item-desc">
+        <div class="item-name">Item 1</div>
+        <div class="item-date">Date</div>
+      </div>
+        <div class="tools">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+          <button class="done">Done</button>
+        </div>
+      </div> -->
+    </div>
+</section>
+<section id="completed">
+  <div class="container hidden" id="container-completed">
+  </div>
+</section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
